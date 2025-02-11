@@ -1,0 +1,162 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    backdrop-filter: blur(3px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.straw-hat-pirates {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.pirate-card {
+    display: none;
+    max-width: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pirate-card.open {
+    display: block;
+}
+
+.pirate-card img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.pirate-card .card-header {
+    padding: 30px 40px 0;
+}
+
+.pirate-card .pirate-name {
+    margin-bottom: 5px;
+}
+
+.pirate-card .type {
+    background-color: #ffffff;
+    font-size: 12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.pirate-card .details {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pirate-card .card-information {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.pirate-card .card-information h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6B727A;
+}
+
+.pirate-card .card-information .description{
+    padding: 0 10px;
+    font-size: 15px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.luffy-background {
+    background-color: #aa2912;
+}
+
+.zoro-background {
+    background-color: #037730;
+}
+
+.usopp-background {
+    background-color: #c06d0e;
+}
+
+.nami-background {
+    background-color: #139db6;
+}
+
+.sanji-background {
+    background-color: #d3d604;
+}
+
+.chopper-background {
+    background-color: #da70c0;
+}
+
+.robin-background {
+    background-color: #880388;
+}
+
+.listing {
+    max-width: 240px;
+}
+
+.listing .pirate img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.listing .pirate {
+    background-color: #6b727a;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+
+    transition: 0.15 ease-in-out;
+}
+
+.listing .pirate:hover {
+    transform: scale(1.05);
+}
+
+.listing .pirate span {
+    padding-right: 20px;
+}
+
+.listing .pirate.active {
+    background-color: #fa6668;
+}
